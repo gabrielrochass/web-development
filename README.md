@@ -26,9 +26,27 @@ Repositório destinado ao estudo de desenvolvimento web
 - li (list): cria os pontos * da lista de itens
 - ol (ordered list): dá um tab pra lista mas numera cada item da lista com 1. 2. ...
 - strong: bold a palavra
-- em (enfatizar): torna a plavra italico 
+- em (enfatizar): torna a plavra italico
+- form: cria um form com algum atributo ao caminho para o backend. o parâmetro action="" chama o caminho, placeholder="" indeica o que tá escrito dentro da box
+- button: cria um botão 
+- input: se colocar qualquer tipo e o parâmetro "required" no fim, só vai ser possível submitar se o campo for preenchido. O atributo name="" serve para que, se dois inputs tiverem o mesmo nome, quando selecionar um, deselecionar o outro.
+
+> type radio: selecionar
+
+> type text: colocar texto
+
+> type time: adicionar tempo 
+
+> type checkbox: permite selecionar mais de um item. Para deixar tudo selecionado por default é só colocar o parâmetro "checked"
+
+- label: faz com que quando eu clique no nome seja a mesma coisa de clicar no target
+> for="": funciona como um link entre o label e o child que tá dentro do label. ele deve ser igual ao id do childs
+
+- br: line break entre elementos
 
 *A maioria dos elementos são containers que contém informação entre a opening tag e a closing tag. Exemplo: <>hello</>*
 
 Outros elementos não contém necessariamente informação acompanhada. Como exemplo, pode-se citar <!doctype html>. Isso avisa ao servidor para ele esperar um documento HTML usando a versão mais atual.
+
+Um fato sobre os atributos: a ordem não importa!
 
