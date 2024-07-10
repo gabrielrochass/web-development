@@ -22,6 +22,12 @@ Repositório destinado ao estudo de desenvolvimento web
         - _parent: abre o link no frame pai do atual. Se não houver um pai, comporta-se como um "_self"
         - _top: abre o link no contexto do topo da janela, removendo todos os frames. Se não houver frames, comporta-se como "_self"
 
+- ul (unsorted list): meio que dá um tab pra iniciar uma lista com "li"
+- li (list): cria os pontos * da lista de itens
+- ol (ordered list): dá um tab pra lista mas numera cada item da lista com 1. 2. ...
+- strong: bold a palavra
+- em (enfatizar): torna a plavra italico 
+
 *A maioria dos elementos são containers que contém informação entre a opening tag e a closing tag. Exemplo: <>hello</>*
 
 Outros elementos não contém necessariamente informação acompanhada. Como exemplo, pode-se citar <!doctype html>. Isso avisa ao servidor para ele esperar um documento HTML usando a versão mais atual.
