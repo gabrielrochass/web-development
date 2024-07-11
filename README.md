@@ -60,3 +60,53 @@ Um fato sobre os atributos: a ordem não importa!
 
 Dentro do head do html, é preciso ter a liguagem da página, os links para o css e o js e o resto vem qnd digita '!'
 
+# CSS
+
+Cascarding Style Sheets (CSS) é usado para estilar o código HTML de acordo com as divs e as características dadas a elas. É o CSS que deixa a aplicação bonita ou estilizada.
+
+CSS pode ser aplicado internamente, inline ou externamente (preferível). Se for externamente, deve ser linkado no head do html. 
+
+Quando uma declaração não acontece da forma que o CSS espera, seja por erro na nomenclatura da propriedade ou no valor, o CSS simplemente ignora e usa os valores deafult, ele não exibe um erro, o que pode tornar difícil a identificação de algo errado. É possível validar usando um site chamado ´css validation service´
+
+> link rel="stylesheet" href="style.css": linka html e css
+
+> style: cria um css dentro do html
+
+> style como parâmetro do elemento (evitar)
+
+![alt text](image-1.png)
+
+- font-size
+- font-familly
+- font-weight
+- color
+- background-color
+- text-transform
+- border
+
+> É possível colocar um "!important" depois do valor da propriedade, mas é preciso evitar pq isso indica má organização do código e faz com que a informação sobrescreva qualquer outra
+
+
+## Selectors
+
+Um selector é basicamente o tipo de marcador que é usado pra associar elementos do html com o estilo css. Ex: body, p, h1. Qualquer coisa pode ser alterada pelo selector
+
+1. `Elementos` (tipoDoElemento)
+2. `Classes:` qualquer elemento pode ter uma classe (meio que um nome específico pra ela, ou um id). Isso ajuda a quando eu quero, mesmo sabeno que são o mesmo tipo de elemnto, diferenciar duas coisas. (.nomeDaClasse)
+3. `Id:` ainda mais específico que a classe. Serve pra quando uma mesma classe é atribuída a mais de um elemnto e euq euro editar somente um elemento. (#id). A melhor forma de fazer, no entanto, é focar no uso de classes.
+4. `Universal (*):` ele pega todo mundo da página
+
+Como classes são mais esfecíficas que elementos, elas sobrepõem o estilo dos elementos
+
+É possível agrupar selectors que você quer que tenham o mesmoestilo utilizando a vírgula para separar. Exemplo: h1, h1 {}
+
+Se não separar por vígula, ele vai produrar por algo que está dentro do primeiro selector. Exemplo: article span -> ele vai procurar todas as palavras que estão dentro do tipo span dentro de todos os tipos article. No entanto, é mais vantajoso utilizar uma classe para o span para que ele possa ser reutilizado em outros pontos do código
+
+É possível inspecionar uma página para saber quais classes e qual estilo está sendo aplicado àquela classe:
+![alt text](image-2.png)
+
+> `Herança:` tipicamente, qualquer coisa relacionada a font e font-size é herdade, além de line, height, alignment. Ou seja, qualquer configuração que lide com font e tipografia. Qualquer coisa que não esteja ligado a isso, não é dado como herança.
+
+> Specify Calulator: Ajuda a calcular a especificidade de um selector
+
+## Colors
