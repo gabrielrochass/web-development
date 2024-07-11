@@ -27,6 +27,7 @@ Repositório destinado ao estudo de desenvolvimento web
 - ol (ordered list): dá um tab pra lista mas numera cada item da lista com 1. 2. ...
 - strong: bold a palavra
 - em (enfatizar): torna a plavra italico
+- small: diminui um pouco o tamanho da fonte diretamente no html
 - form: cria um form com algum atributo ao caminho para o backend. o parâmetro action="" chama o caminho, placeholder="" indeica o que tá escrito dentro da box
 - button: cria um botão 
 - input: se colocar qualquer tipo e o parâmetro "required" no fim, só vai ser possível submitar se o campo for preenchido. O atributo name="" serve para que, se dois inputs tiverem o mesmo nome, quando selecionar um, deselecionar o outro.
@@ -43,10 +44,16 @@ Repositório destinado ao estudo de desenvolvimento web
 > for="": funciona como um link entre o label e o child que tá dentro do label. ele deve ser igual ao id do childs
 
 - br: line break entre elementos
+- div (division): usados pra qualquer coisa. São muito importantes pq são comumente usados para linkar com o CSS para estililzar uma sessão da sua página de um jeito particular.
+> class: nomeia uma div para ser chamada pelo css
+
+- footer: usado fora da main, apesar de não mudar nada na tela, ou seja, é muito mais pra identificação do que para efeito visual.
 
 *A maioria dos elementos são containers que contém informação entre a opening tag e a closing tag. Exemplo: <>hello</>*
 
 Outros elementos não contém necessariamente informação acompanhada. Como exemplo, pode-se citar <!doctype html>. Isso avisa ao servidor para ele esperar um documento HTML usando a versão mais atual.
 
 Um fato sobre os atributos: a ordem não importa!
+
+Dentro do head do html, é preciso ter a liguagem da página, os links para o css e o js e o resto vem qnd digita '!'
 
