@@ -6,7 +6,7 @@ Repositório destinado ao estudo de desenvolvimento web
 - CSS: estilo
 - JS: funcionalidade
 
-![alt text](image.png)
+![alt text](html-basics/image.png)
 
 # Elementos
 - `h1:` título grande. Vai diminuindo de acordo com o aumento do "h", por exemplo, h1 > h2 > h3
