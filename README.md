@@ -74,7 +74,7 @@ Quando uma declaração não acontece da forma que o CSS espera, seja por erro n
 
 > style como parâmetro do elemento (evitar)
 
-![alt text](image-1.png)
+![alt text](css/selectors/image-1.png)
 
 - font-size
 - font-familly
@@ -103,10 +103,21 @@ Como classes são mais esfecíficas que elementos, elas sobrepõem o estilo dos 
 Se não separar por vígula, ele vai produrar por algo que está dentro do primeiro selector. Exemplo: article span -> ele vai procurar todas as palavras que estão dentro do tipo span dentro de todos os tipos article. No entanto, é mais vantajoso utilizar uma classe para o span para que ele possa ser reutilizado em outros pontos do código
 
 É possível inspecionar uma página para saber quais classes e qual estilo está sendo aplicado àquela classe:
-![alt text](image-2.png)
+![alt text](css/selectors/image-2.png)
 
 > `Herança:` tipicamente, qualquer coisa relacionada a font e font-size é herdade, além de line, height, alignment. Ou seja, qualquer configuração que lide com font e tipografia. Qualquer coisa que não esteja ligado a isso, não é dado como herança.
 
 > Specify Calulator: Ajuda a calcular a especificidade de um selector
 
+
 ## Colors
+
+- `background-color (shortcut: background):` altera a cor do fundo da tela toda. É possível mudar as cores através da paleta oferecida pelo vscode clicando na janelinha de cor.
+- `color:` muda a cor da fonte da página. Aqui, também é possível colocar uma cor pelo seu rbg colocando: `color: rbg(255,0,0)` ou pelo seu hexadecimal como `#f5f5f5` ou hsl como `hsl(0, 100%, 50%)`
+
+> obs: ao escoher uma cor de background, é importante levar em cnosideração o contraste com a cor da letra, pra que fique visível
+
+> coolors.co: color pallet picking tool. Também tem um contrast checker que vc coloca a cor de fundo e da fonte e ele dá uma nota pra saber o quão bom tá
+
+
+## Unit and Sizes
