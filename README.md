@@ -121,3 +121,30 @@ Se não separar por vígula, ele vai produrar por algo que está dentro do prime
 
 
 ## Unit and Sizes
+![alt text](css/units/image.png)
+
+- `pixel (px):` é a principal unidade absoluta que vai ser usada e é a que geralmente mais utilizada. O default é `16px`, 1rem (root element).
+
+- `porcentagem (%):` por default, width do h1 é 100%. Ele represetna a porcentagem de algum valor default do parâmetro
+
+- `ch:` define a quantidade de caracteres de um parágrafo ou bloco de texto -> é importante para definição de colunas, por exemplo
+
+> OBS: a escolha de um absolute font-size tira a escolha do usuário de alterar nas configurações do chrome e alterar também a fonte, pois define que, independente de qualquer coisa, o tamanho da fonte vai ser x
+
+***PRÁTICAS RECOMENDADAS***
+- Tamanho de fonte: `em` ou `rem`
+- larguras e alturas: `%` ou `vh`/ `vw`
+- espaçamento (margin/ padding): `rem`
+- layouts de grid: `fr`
+
+
+
+## Box Model
+
+------------------------
+- padding
+- justify-content
+- box
+- houver
+- margin
+- estrutura habilital de uma page
