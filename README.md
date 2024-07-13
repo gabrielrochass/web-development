@@ -132,7 +132,7 @@ Se não separar por vígula, ele vai produrar por algo que está dentro do prime
 > OBS: a escolha de um absolute font-size tira a escolha do usuário de alterar nas configurações do chrome e alterar também a fonte, pois define que, independente de qualquer coisa, o tamanho da fonte vai ser x
 
 ***PRÁTICAS RECOMENDADAS***
-- Tamanho de fonte: `em` ou `rem`
+- Tamanho de fonte: `em` ou `rem` -> em > rem
 - larguras e alturas: `%` ou `vh`/ `vw`
 - espaçamento (margin/ padding): `rem`
 - layouts de grid: `fr`
@@ -141,10 +141,40 @@ Se não separar por vígula, ele vai produrar por algo que está dentro do prime
 
 ## Box Model
 
-------------------------
-- padding
+- padding: determina um espaço dentro do border pra o texto não fica muito colado nas bordas
+- border: largura da box que delimita o texto
+- margin: espaço externo entre o border e os elementos vizinhos -> isso é o que deixa mais visualmente atrativo e bonito. Se setar left-right to `auto`, ele fica centralizado horizontalmente
+- box-sizing: define como o cálculo da largura e altura de um elemtno deve ser feito, incluindo ou excluindo o padding e o border no cálculo dessas dimensões. O defalut é `content-box`
+- outline: linha fora do border
+- outline-offset: distância entre outline e border. Também entra número negativos que ficam pra dentro do border
+- border-raidius: arredonda as bordas 
 - justify-content
 - box
 - houver
-- margin
-- estrutura habilital de uma page
+
+***VALORES COMUNS DE BOX***
+
+*Padding*
+- Pequeno: 0.5rem (8px)
+- Médio: 1rem (16px)
+- Grande: 2rem (32px)
+
+*Border*
+- Finíssima: 1px solid #ccc
+- Média: 2px solid #ddd
+- Espessa: 3px solid #aaa
+
+*Margin*
+- Pequeno: 0.5rem (8px)
+- Médio: 1rem (16px)
+- Grande: 2rem (32px)
+
+
+
+Tudo no CSS é uma box!
+![alt text](css/box-model/image.png)
+
+- laranja = padding
+- verde = margin
+- azul = content
+
