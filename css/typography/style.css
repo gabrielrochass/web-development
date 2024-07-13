@@ -1,0 +1,34 @@
+/* input, button {
+    font-size: inherit;
+} */
+
+body {
+    padding: 10%;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+p a {
+    color: red;
+    text-decoration: none;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.letter-space {
+    letter-spacing: 0.1em;
+    background-color: beige;
+
+}
+
+p {
+    text-indent: 2em;
+}
+
+p span {
+    font-weight: bold;
+}

@@ -178,3 +178,22 @@ Tudo no CSS é uma box!
 - verde = margin
 - azul = content
 
+## Typography
+
+Tipografia é a forma como o testo é organizado e apresentado
+
+- text-decoration: define algum destaque para a tupografia como deixar sublinahdo (underline), overline ou line-through
+
+> uma importante aplicação para o text decoration é quando se trata de links. Links naturalemnte sãi undeline ou de uma cor diferente, no entanto, é possível tanto alterar a cor quando o fato de ele ser underline para que não fique tão chamativo
+
+- text-transform: pode deixar o texto todo maiúsculo, todo minúsculo, só as iniciais maiúsculas...
+
+- text-align: o default é `left`. Mas pode ser bastante útil justificar esse texto usando `justify`
+
+- text-indent: indenta o parágrafo com a distância que vc setar
+- line-height: o default é `1.2`. Seu aumento pode impactar na legibilidade do site
+- letter-spacing*: altera o espaçamento entre as letras das plavras
+- word-spacing*: altera o espaçamento entre as palavras de fato
+- font-weight: o default é `300`. Basicamente define se uma palavra é bold ou não
+- font-style: define se uma palavra é italic ou não
+- font-familly: o default é `serif`, mas é muito mais comum se usar `sans-serif`. O lance de aparecer mais de uma font quando coloca o font-familly é que ele tenta achar no pc a primeira, se não achar, ele tenta a segunda e assim sucessivamente. Fontes que são separadas por espaço, precisam estar entre ''
