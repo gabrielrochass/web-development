@@ -182,18 +182,25 @@ Tudo no CSS é uma box!
 
 Tipografia é a forma como o testo é organizado e apresentado
 
-- text-decoration: define algum destaque para a tupografia como deixar sublinahdo (underline), overline ou line-through
+- `text-decoration:` define algum destaque para a tupografia como deixar sublinahdo (underline), overline ou line-through
 
 > uma importante aplicação para o text decoration é quando se trata de links. Links naturalemnte sãi undeline ou de uma cor diferente, no entanto, é possível tanto alterar a cor quando o fato de ele ser underline para que não fique tão chamativo
 
-- text-transform: pode deixar o texto todo maiúsculo, todo minúsculo, só as iniciais maiúsculas...
+- `text-transform:` pode deixar o texto todo maiúsculo, todo minúsculo, só as iniciais maiúsculas...
 
-- text-align: o default é `left`. Mas pode ser bastante útil justificar esse texto usando `justify`
+- `text-align:` o default é `left`. Mas pode ser bastante útil justificar esse texto usando `justify`
 
-- text-indent: indenta o parágrafo com a distância que vc setar
-- line-height: o default é `1.2`. Seu aumento pode impactar na legibilidade do site
-- letter-spacing*: altera o espaçamento entre as letras das plavras
-- word-spacing*: altera o espaçamento entre as palavras de fato
-- font-weight: o default é `300`. Basicamente define se uma palavra é bold ou não
-- font-style: define se uma palavra é italic ou não
-- font-familly: o default é `serif`, mas é muito mais comum se usar `sans-serif`. O lance de aparecer mais de uma font quando coloca o font-familly é que ele tenta achar no pc a primeira, se não achar, ele tenta a segunda e assim sucessivamente. Fontes que são separadas por espaço, precisam estar entre ''
+- `text-indent:` indenta o parágrafo com a distância que vc setar
+- `line-height: `o default é `1.2`. Seu aumento pode impactar na legibilidade do site
+- `letter-spacing*:` altera o espaçamento entre as letras das plavras
+- `word-spacing*:` altera o espaçamento entre as palavras de fato
+-` font-weight:` o default é `300`. Basicamente define se uma palavra é bold ou não
+- `font-style:` define se uma palavra é italic ou não
+- `font-familly:` o default é `serif`, mas é muito mais comum se usar `sans-serif`. O lance de aparecer mais de uma font quando coloca o font-familly é que ele tenta achar no pc a primeira, se não achar, ele tenta a segunda e assim sucessivamente. Fontes que são separadas por espaço, precisam estar entre ''
+
+## Styling Links  
+- `text-decoration:` pode alterar a forma como o link aparece, mas é importante deixar de um jeito que seja visível o link e perceptívelmente clicável
+- `cursor:` altera o cursor para um "not allowed" ou diferentes tipos, mas na maioria das vezes não é preciso
+- `sudo class:` represetna o estado atual de um elemento, como `visited` ou `houver` ou `after` ou `before`, por exemplo. Desses, um muito interessante é o hover que faz com que o link se altere quando o cursor passe por ele. Como o `sudo class` tem mais especificidade, ele é executado antes da âncora `a` somente e tem mais prioridade, ou seja, overwrite a outra. Outra muito importante que normalmente segue lado a lado com o hover é o `a:focus`, que serve pra se uma pessoa estiver em um iphone ou algo móvel e não tiver mouse, o usuário consiga selecionar os links cliclando ou com um tab.
+- `opacity (0-1):` define o quão transparente um elemento é
+

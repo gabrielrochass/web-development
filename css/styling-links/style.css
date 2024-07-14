@@ -4,3 +4,26 @@ body {
     font-family: sans-serif;
     text-align: justify;
 }
+
+a {
+    text-decoration: none;
+    cursor: not-allowed;
+    cursor: pointer;
+    color: black;
+}
+
+a:visited {
+    color: purple
+}
+
+a:hover, a:focus {
+    color: palevioletred;
+    text-decoration: underline;
+    text-transform: uppercase;
+    background: gold;
+}
+
+a:active {
+    color: red;
+}
+
