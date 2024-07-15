@@ -204,3 +204,5 @@ Tipografia é a forma como o testo é organizado e apresentado
 - `sudo class:` represetna o estado atual de um elemento, como `visited` ou `houver` ou `after` ou `before`, por exemplo. Desses, um muito interessante é o hover que faz com que o link se altere quando o cursor passe por ele. Como o `sudo class` tem mais especificidade, ele é executado antes da âncora `a` somente e tem mais prioridade, ou seja, overwrite a outra. Outra muito importante que normalmente segue lado a lado com o hover é o `a:focus`, que serve pra se uma pessoa estiver em um iphone ou algo móvel e não tiver mouse, o usuário consiga selecionar os links cliclando ou com um tab.
 - `opacity (0-1):` define o quão transparente um elemento é
 
+## Styling Lists
+
