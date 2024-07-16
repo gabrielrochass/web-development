@@ -216,3 +216,8 @@ Tipografia é a forma como o testo é organizado e apresentado
 - `sudo elements:` devem começar com :: ao invés de : como o sudo class. ele funciona como um elemento de fato. ex: marker mexe exclusivamente com o bullet
 - `value:` é possível setar um value pra um child da lista pra ele começar daquele posto em específico
 
+## Projects:
+- nav: por debaixo dos panos, nada mais é do que uma div, mas é usada pra melhor estruturação e organização do código
+- display: se colocar `inline`, por exemplo, os elementos da listas são mostrados em uma linha
+ 
+
