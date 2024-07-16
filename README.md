@@ -205,4 +205,14 @@ Tipografia é a forma como o testo é organizado e apresentado
 - `opacity (0-1):` define o quão transparente um elemento é
 
 ## Styling Lists
+- `list-style-type:` altera a forma de ordenação das listas ordenadas, por exemplo, trocando de 1, 2, 3 (decimal) para a, b, c (lower-alpha) ou números romanos (upper-roman) ou bullet, como uma ul (disc) ou um somente um bullet sem preenchimento (circle) ou um quadrado (square)
+- `start:` diz de onde a lista deve começar como start="3"
+- `reversed:` não tem valor associado, mas se tiver presenta indica que é de trás pra frente
+- list-style-position: ele serve pra resolver o problema de quando eu seto o text-align de um ul para center, pois os bullets ficam ainda na esquerda. Por isso, eu seto list-style-position to `inside`
+- `list-style-image:` altera o bullet para algo baixado da internet como um checkmark específico, por exemplo
+- `list-style: `uma coisa interessante a se fazer e deixar, por exemplo: list-style: square url('check.jpg'). Quando faz isso, ele deixa meio que o square como plano B se a imagem não carregar
+> ponto importante: se quiser, pode colocar tudo aqui tipo style-type, style-image, tudo com seus valores lado a lado
+- `nth-child(n):` sudo class que ajuda a alterar somente um dos itens da lista colocando qual o child dele como 2 ou odd(par) ou even(ímpar)
+- `sudo elements:` devem começar com :: ao invés de : como o sudo class. ele funciona como um elemento de fato. ex: marker mexe exclusivamente com o bullet
+- `value:` é possível setar um value pra um child da lista pra ele começar daquele posto em específico
 

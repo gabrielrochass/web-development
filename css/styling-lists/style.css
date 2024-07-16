@@ -3,3 +3,44 @@ body {
     font-size: 1.2rem;
     font-family: sans-serif;
 }
+
+ol {
+    list-style-type: upper-roman;
+    list-style-type: decimal;
+}
+
+.no-bullet {
+    list-style-type: none;
+    /* aqui tem um padding default que precisa ser retirado */
+    padding: 0;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    /* outside é o default -> deixa na esquerda */
+    color: blue;
+    /* se mudar a color, muda a cor do bullet também */
+    list-style-image: url('check.jpg');
+    list-style: square inside url('check.jpg');
+}
+
+ol li {
+    color: red;
+}
+
+.child li:nth-child(2) {
+    /* altera um item só da lista */
+    text-align: left;
+    list-style: disc outside;
+    font-size: 1.5em;
+    color: green;
+}
+
+
+.two li::marker{
+    color: black;
+    font-size: 1.5em;
+    content: "FOR FREE";
+    content: "🎉";
+} 
