@@ -219,4 +219,17 @@ const people = [
 //   fetchData();
   
 
-// recursão
+// recursão: técnica em que uma função se chama repetidamente até atingir uma condição de parada
+// funciona bem quando uma função se repete várias vezes
+// estrutura: condição de parada (caso base) e chamada recursiva (subproblema)
+
+// fatorial:
+const factorial = (n) => {
+    if (n == 0) {
+        return 1
+    }
+    return n * factorial(n-1)
+}
+
+console.log(factorial(5)) // 120
+
