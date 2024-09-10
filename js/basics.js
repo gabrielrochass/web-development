@@ -233,3 +233,40 @@ const factorial = (n) => {
 
 console.log(factorial(5)) // 120
 
+// input: prompt, confirm
+// prompt -> só funciona em ambiente de navegação web
+const username = prompt('digite seu user: ')
+console.log(`seu username é ${username}`)
+
+// confirm -> tb só funciona na web
+// let resultado = confirm(mensagem);
+let resposta = confirm("Você tem certeza que quer deletar?");
+if (resposta) {
+  console.log("Item deletado.");
+} else {
+  console.log("Ação cancelada.");
+}
+
+// readline -> terminal
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Digite seu nome: ', (name) => {
+  console.log(`Olá, ${name}!`);
+  rl.close(); // Fecha a interface
+});
+
+// output: console.log, alert, document.write
+
+// console.log -> imprime no terminal 
+console.log('olá')
+
+// alert -> mostra em um popup na web (ruim pra test no cypress)
+alert("Bem-vindo ao site!"); // aparece com uma mensagem de ok para apagar o popup
+
+// document.write -> insere conteúdo diretamente no documento html enquanto a página está sendo carregada (lemebrar de usar antes do carregamento da página)
+document.write("<h1>Bem-vindo à minha página! Já iremos mostrar nosso conteúdo!</h1>");
