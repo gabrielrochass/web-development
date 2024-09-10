@@ -91,6 +91,23 @@ switch (day) {
 
 
 // loops: for, while e do-while
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+console.log('\n')
+let count = 4;
+while (count != 0) {
+    console.log(count);
+    count--;
+}
+
+console.log('\n')
+let i = 0;
+do {
+  console.log(i); // 0 -> executa uma vez antes de verificar 
+  i++;
+} while (i < 5 && (i != 0));
 
 // coleções
 
