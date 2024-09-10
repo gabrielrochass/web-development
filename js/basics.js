@@ -91,10 +91,12 @@ switch (day) {
 
 
 // loops: for, while e do-while
+// for
 for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
+// while
 console.log('\n')
 let count = 4;
 while (count != 0) {
@@ -102,6 +104,7 @@ while (count != 0) {
     count--;
 }
 
+// do-while
 console.log('\n')
 let i = 0;
 do {
@@ -109,7 +112,71 @@ do {
   i++;
 } while (i < 5 && (i != 0));
 
-// coleções
+// for of
+for (const color of colors) { // for i in em python
+    console.log(color)
+}
+
+// break -> encerra o loop
+// continue -> vai pra próxima iteração do loop
+
+// coleções: array, object, set, map
+// array: coleção ordenada de valores com índices -> funciona como lista em python ou uma stack (pilha)
+let fruits = ['apple', 'orange', 'grapes', 'pinapple', 'banana']
+console.log(fruits[0]); // apple -> acessar elementos
+
+fruits.push('mango'); // add elemento no fim da lista
+console.log(fruits)
+
+fruits.pop();
+console.log(fruits) // remove o último elemento da lista
+
+fruits.shift();
+console.log(fruits) // remove o primeiro elemento da lista
+
+fruits.unshift('potato')
+console.log(fruits) // adiciona no inicio da lista
+
+let newFruits = fruits.map(letter => letter = 'apple')
+console.log(newFruits)
+
+let myFruits = fruits.filter(letter => (letter[0] == 'o') || (letter[0] == 'g'))
+console.log(myFruits) 
+
+// object: coleção de pares chave-valor
+console.log(person.nome) // Gabriel
+console.log(person['idade']) // console.log(person.idade) -> 21
+person.city = 'Recife' // adicionar propriedade
+console.log(person) // { nome: 'Gabriel', idade: 21, city: 'Recife' }
+person.idade = 22 // alterar propriedade
+console.log(person.idade) // 22
+
+// set: coleção de valores únicos
+let unique = [1,1,1,2,2,3,4,4,4,4,5,5,6]
+console.log(new Set(unique)) // Set(6) { 1, 2, 3, 4, 5, 6 } -> retira as repetições
+unique = new Set(unique)
+
+unique.add(7)
+console.log(unique) // Set(7) { 1, 2, 3, 4, 5, 6, 7 }
+unique.add(6) // não muda nada oq já tem 6 no set
+console.log(unique)
+
+console.log(unique.has(3)) // true
+
+unique.delete(2)
+console.log(unique) // Set(6) { 1, 3, 4, 5, 6, 7 }
+
+
+// map: coleção de pares chave-valor com chaves de qualquer tipo -> mapeia qualquer coisa com qualquer coisa
+let map = new Map()
+map.set('nome', 'Daniel')
+map.set(1, 'one')
+console.log(map) // Map(2) { 'nome' => 'Daniel', 1 => 'one' }
+
+console.log(map.get('nome')) // Daniel
+
+map.delete(1)
+console.log(map) // Map(1) { 'nome' => 'Daniel' }
 
 // funções
 
