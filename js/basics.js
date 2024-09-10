@@ -65,6 +65,30 @@ console.log(isTrue)
 
 
 // estruturas de controle: if, else e switch
+if (age >= 18) {
+    console.log('já que vc possui a idade ' + age + ' anos. Então, vc pode votar')
+} else if (age <= 10) {
+    console.log('vá estudar')
+} else {
+    console.log('quase lá!')
+}
+
+let day = 'terça';
+
+switch (day) {
+  case 1:
+    console.log("Domingo");
+    break;
+  case 2:
+    console.log("Segunda-feira");
+    break;
+  case 'terça':
+    console.log("Terça-feira");
+    break;
+  default:
+    console.log("Dia inválido");
+}
+
 
 // loops: for, while e do-while
 
