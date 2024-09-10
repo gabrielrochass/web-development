@@ -178,6 +178,45 @@ console.log(map.get('nome')) // Daniel
 map.delete(1)
 console.log(map) // Map(1) { 'nome' => 'Daniel' }
 
-// funções
+
+
+// funções: blocos de código reutilizáveis
+
+// declarativas
+function multiplicaPor5(num) {
+    return num * 5
+}
+console.log(multiplicaPor5(10)) // 50
+
+// arrow function (mais popular)
+const greet = (name) =>  `hello, ${name}!`
+console.log(greet("Gabriel")) 
+
+const people = [
+    { name: "José", age: 35 },
+    { name: "Maria", age: 28 },
+    { name: "João", age: 40 },
+    { name: "Ana", age: 25 }
+  ];
+  
+  const getAdultsSortedByName = (persons) => 
+    persons
+      .filter(person => person.age > 30) // Filtra pessoas com mais de 30 anos
+      .map(person => person.name)        // Mapeia para um array com os nomes
+      .sort();                           // Ordena os nomes em ordem alfabética
+  
+  console.log(getAdultsSortedByName(people)); 
+  // ["João", "José"]
+  
+
+// assíncrona
+// async function fetchData() {
+//     let response = await fetch('https://api.example.com/data');
+//     let data = await response.json();
+//     console.log(data);
+//   }
+  
+//   fetchData();
+  
 
 // recursão
